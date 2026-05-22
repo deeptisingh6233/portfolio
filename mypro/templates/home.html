@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-tag">✦ Available for Work</span>
+        <h1>Crafting Digital<br><span>Experiences</span></h1>
+        <p>Django developer passionate about building clean, fast, and beautiful web applications that make an impact.</p>
+        <div class="hero-btns">
+            <a href="/contact/" class="btn-primary">Get In Touch</a>
+            <a href="/about/" class="btn-secondary">About Me</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-stats">
+            <div class="stat-card">
+                <span class="num">1+</span>
+                <span class="label">Years Learning</span>
+            </div>
+            <div class="stat-card">
+                <span class="num">5+</span>
+                <span class="label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+                <span class="num">3+</span>
+                <span class="label">Technologies</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+    <div class="section-header">
+        <span class="section-tag">✦ My Work</span>
+        <h2>Featured Projects</h2>
+        <p>A selection of things I've built while learning and growing as a developer.</p>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="{% static 'images/imgg1.jpeg' %}" alt="Portfolio Project">
+            <div class="project-info">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio built with Django, showcasing projects and skills.</p>
+                <span class="project-tag">Django · Python</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'images/imgg1.jpeg' %}" alt="Project 2">
+            <div class="project-info">
+                <h3>Web Application</h3>
+                <p>A full-stack web app with authentication and database integration.</p>
+                <span class="project-tag">Django · SQLite</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'images/imgg1.jpeg' %}" alt="Project 3">
+            <div class="project-info">
+                <h3>Static Website</h3>
+                <p>A responsive static website built with HTML, CSS and JavaScript.</p>
+                <span class="project-tag">HTML · CSS · JS</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
